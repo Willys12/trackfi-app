@@ -1,0 +1,125 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Apply consistent box-sizing */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* App Container */
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar Styles */
+.navbar-up{
+  background-color: #3498db;
+  width: 100vw;
+  padding: 0 80px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+/* Navbar Link Styles */
+.navbar-up a, .navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-up a:hover, .navbar a:hover {
+  color: #e0e0e0;
+}
+
+/* User Button Styling */
+.cl-user-button, .clerk-user-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.cl-user-button:hover, .clerk-user-button:hover {
+  color: #e0e0e0;
+}
+
+/* Sign-in Container */
+.sign-in-container {
+  margin-top: 200px;
+}
+
+/* Form Styling */
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+/* Form Fields */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Button Styling */
+.button {
+  width: 100%;
+  padding: 14px;
+  background-color: #3498db;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}

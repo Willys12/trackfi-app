@@ -1,0 +1,161 @@
+/* Centered container for the app */
+.dashboard-container {
+  width: 80%;
+}
+
+/* General styling for headers within the app */
+h1,
+h2 {
+  color: #2c3e50;
+  text-align: center;
+}
+h4 {
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 20px;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #7f8c8d;
+}
+.about-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-section h3 {
+  color: #2980b9;
+  text-align: center;
+}
+
+/* Form and list container */
+.form-container,
+.list-container {
+  margin-bottom: 20px;
+}
+
+/* Common class for all buttons */
+.button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+.button-delete {
+  background-color: #343cdb;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button-delete:hover {
+  background-color: #343cdb;
+}
+
+/* Common class for all input fields and selects */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #3498db;
+}
+
+/* Labels for better readability */
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.table-container {
+  margin: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling if the table is too wide */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd; /* Light grey border for cells */
+  text-align: left;
+}
+
+.table th {
+  background-color: #3498db; /* Darker blue header background */
+  color: white;
+  font-size: 16px;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Zebra striping for rows, light grey */
+}
+
+.table tbody tr:hover {
+  background-color: #e8f4f8; /* Light blue hover effect for rows */
+}
+
+/* Responsive design for mobile first approach */
+/* Tablet breakpoint 768px */
+@media screen and (min-width: 768px) {
+  .dashboard-container {
+    width: 60%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .form-container,
+  .list-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .table-container {
+    overflow-x: auto; /* Disable horizontal scrolling on larger screens */
+  }
+  .form-container > *,
+  .list-container > * {
+    flex: 1;
+  }
+}
+/* extra small screens breakpoint 480px */
+@media screen and (min-width: 480px) {
+  h1, h2, h4 {
+    font-size: 1.5em;
+  }
+  .input, .button, .button-delete {
+    font-size: 1em;
+    padding: 6px 10px;
+  }
+  .table th, .table td {
+    padding: 8px 10px;
+  }
+  .about-section {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+}

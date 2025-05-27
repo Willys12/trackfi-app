@@ -1,0 +1,23 @@
+# node modeules
+node_modules
+# build output
+dist
+# local env files
+.env
+# local env files for development
+.env.local
+# local env files for development
+.env.development.local
+# local env files for production
+.env.production.local
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+# editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea   
