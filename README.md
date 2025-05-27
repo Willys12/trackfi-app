@@ -14,7 +14,7 @@
 
 ## 🖼️ Screenshots
 
-> (Insert screenshots here once available showing sign-in screen, dashboard, and sign-out/profile UI)
+> (App screenshots will be added here once available showing sign-in screen, dashboard, and sign-out/profile UI)
 
 ## 🔧 Tech Stack
 
@@ -44,25 +44,30 @@ cd trackfi/frontend
 
 # Install dependencies
 npm install
+```
+
+```bash
 
 # Start the development server
 npm run dev
-Your app will now run on http://localhost:5173.
 
-# Add your Clerk key
+* Your app will now run on http://localhost:5173.
+```
+
+## Add your Clerk key
 Create a .env file in the frontend folder and add:
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key_here
 
-# 🚀 Deployment
+## 🚀 Deployment
 *The app has not been deployed yet, but will be soon — both frontend and backend will be deployed on Render.
 
-# 🤖 Tech Stack
+## 🤖 Tech Stack
 - Frontend: React, TypeScript, Tailwind CSS, Clerk, React Router
 - Backend: Node.js + Express (planned), MongoDB
 - Authentication: Clerk (with embedded sign-in/sign-up)
 - Deployment: Render (upcoming)
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 Ben Willys
 Web Developer | Multimedia Designer
 
