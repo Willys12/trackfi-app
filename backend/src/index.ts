@@ -1,4 +1,4 @@
-import express, { Express } from "express";
+import express, { Express, Response, Request } from "express";
 import mongoose from "mongoose";
 import  "dotenv/config";
 import cors from "cors";
@@ -19,6 +19,10 @@ mongoose.connect(mongoDB)
    .catch((err) => (console.error("Failed to connect to database!", err)));
 
 app.use("/financialRecords", financialRecordRoute);
+app.get("/health", async (req: Request, res: Response) => {
+    res.send({ message: "The Server is healthy"})
+});
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
