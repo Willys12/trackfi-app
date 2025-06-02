@@ -35,7 +35,7 @@ export const FinancialRecordProvider = ({
         if (!user) return;
 
         const response = await fetch(
-        `http://localhost:7000/financialRecords/getAllByUserID/${user.id}`
+        `${import.meta.env.VITE_API_BASE_URL}/financialRecords/getAllByUserID/${user.id}`
         );
 
         if (response.ok) {
@@ -49,7 +49,7 @@ export const FinancialRecordProvider = ({
     }, [user]);
 
     const addRecord = async (record: FinancialRecord) => {
-        const response = await fetch("http://localhost:7000/financialRecords", {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/financialRecords`, {
             method: "POST",
             body: JSON.stringify(record),
             headers: {
@@ -72,7 +72,7 @@ export const FinancialRecordProvider = ({
 
         // if (!user) return;
 
-        const response = await fetch(`http://localhost:7000/financialRecords/${id}`, {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/financialRecords/${id}`, {
             method: "PUT",
             body: JSON.stringify(newRecord),
             headers: {
@@ -96,7 +96,7 @@ export const FinancialRecordProvider = ({
 
         // if (!user) return;
 
-        const response = await fetch(`http://localhost:7000/financialRecords/${id}`, {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/financialRecords/${id}`, {
             method: "DELETE",
         });
 
