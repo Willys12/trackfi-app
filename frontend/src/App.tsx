@@ -14,7 +14,7 @@ function App() {
       <Router>
         <div className='app-container'>
           <div className='navbar-up'>
-            <Link to="/">Dashboard</Link>
+            <Link to="/">Track-Fi</Link>
             <SignedIn>
                 {/* <UserButton showName /> */}
                 <MyHeader />
